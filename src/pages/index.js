@@ -14,6 +14,7 @@ import WOW from 'wowjs'
 // Images
 import AtlantaCityscape from "../images/Atlanta_Cityscape.jpg";
 import MarcusAvatar from "../images/Headshot.png";
+import QM3iMac from "../images/imac_qm3solutions.png"
 import Avatar01 from "../images/avatar01.jpg";
 import LogoLight from "../images/logo-light.png";
 import LogoDark from "../images/logo-dark.png";
@@ -226,14 +227,15 @@ const IndexPage = () => {
                 <div className="container mb-60">
                     <div className="row text-center">
                         <div className="col-md-6 wow slideInUp" data-wow-delay="0.2s" data-wow-duration="1s">
-                            <img src={Mockup03} style={{maxWidth: 457 + "px", width: "100%"}} alt="mockup" />
+                            <img src={QM3iMac} style={{maxWidth: 457 + "px", width: "100%"}} alt="mockup" />
                         </div>
                         <div className="col-md-6 wow fadeIn" data-wow-delay="0.4s" data-wow-duration="2s">
                             <div className="spacer-15"></div>
-                            <h6 className="page-title-alt color mb-10">Creative Agency</h6>
-                            <h2 className="page-title mb-25">Mazel <span className="text-light">One</span></h2>
-                            <p className="mb-35">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum qui dolorem eum fugiat quo reprehenderit qui in dignissim qui blandit ea voluptate velit esse quam suscipit lobortis nisldolore eu feugiat  praesent luptatum nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril.</p>
-                            <img src={Signature} alt="signature" />
+                            <h6 className="page-title-alt color mb-10">Creative Deveopment</h6>
+                            <h2 className="page-title mb-25">About <span className="text-light">Me</span></h2>
+                            <p className="mb-20">Simply put, I build websites!  The long story is that I'm a professional software developer interested in partnering with individuals and small businesses to enable them to take advantage of all that modern technology has to offer.  I can provide the custom software solutions you need!  However, this whole operatioin is just me.  If you're willing to be patient, let's work together to bring your vision into reality!</p>
+                            <p className="mb-35">Every website I build is completely bespoke.  If you can imagine it, I can create it!</p>
+                            <span className="signature">Marcus Quettan</span>
                         </div>
                     </div>
                 </div>
