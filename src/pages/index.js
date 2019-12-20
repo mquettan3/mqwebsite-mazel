@@ -12,6 +12,8 @@ import smoothscroll from 'smoothscroll-polyfill'
 import WOW from 'wowjs'
 
 // Images
+import AtlantaCityscape from "../images/Atlanta_Cityscape.jpg";
+import MarcusAvatar from "../images/Headshot.png";
 import Avatar01 from "../images/avatar01.jpg";
 import LogoLight from "../images/logo-light.png";
 import LogoDark from "../images/logo-dark.png";
@@ -177,7 +179,8 @@ const IndexPage = () => {
                 <div className="header-inner">
                     <div className="logo">
                         <a href="#intro">
-                            <img src={LogoLight} alt="logo"/>
+                            {/* <img src={LogoLight} alt="logo"/> */}
+                            <span className="quettan-logo">Quettan</span>
                         </a>
                     </div>
 
@@ -201,17 +204,17 @@ const IndexPage = () => {
             </div>
 
             <section id="intro" className="intro-fullscreen">
-                <div className="intro-media bg-image overlay-dark20" style={{backgroundImage: "url(" + Image34 + ")"}}></div>
+                <div className="intro-media bg-image overlay-dark20" style={{backgroundImage: "url(" + AtlantaCityscape + ")"}}></div>
                 <div className="intro-caption-waper dark-bg">
                     <div className="intro-full-height container">
                         <div className="intro-content">
                             <div className="intro-content-inner">
                                 <div className="intro-img-circle">
-                                    <img src={Avatar01} alt="avatar01" />
+                                    <img src={MarcusAvatar} alt="avatar01" />
                                 </div>
-                                <h1 className="intro-title mb-10"><span className="text-light">Hi!, I am</span> John Doe</h1>
+                                <h1 className="intro-title mb-10"><span className="text-light">Hi!, I am</span> Marcus Quettan</h1>
                                 <h6 className="page-title-alt color mb-45">Web Designer & Developer</h6>
-                                <a className="btn btn-lg btn-white scroll-down" href="#Statement1">Go My Resume</a>
+                                <a className="btn btn-lg btn-white scroll-down" href="#latest-work">View my Latest Work</a>
                             </div>
                         </div>
                     </div>
