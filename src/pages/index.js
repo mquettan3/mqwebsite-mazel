@@ -14,7 +14,10 @@ import WOW from 'wowjs'
 // Images
 import AtlantaCityscape from "../images/Atlanta_Cityscape.jpg";
 import MarcusAvatar from "../images/Headshot.png";
-import QM3iMac from "../images/imac_qm3solutions.png"
+import QM3iMac from "../images/imac_qm3solutions.png";
+import QM3MultipleDevices from "../images/QM3SolutionsMultipleDevices.png";
+import OffKiMultipleDevices from "../images/OffKiMultipleDevices.png";
+
 import Avatar01 from "../images/avatar01.jpg";
 import LogoLight from "../images/logo-light.png";
 import LogoDark from "../images/logo-dark.png";
@@ -246,18 +249,18 @@ const IndexPage = () => {
                     <div className="row">
                         <div className="col-md-4 col-sm-6 content-box mb-sm-30 wow fadeIn" data-wow-delay="0.2s" data-wow-duration="2s">
                             <div className="icon-top icon-black"><Icon size={32} icon={basic_anchor}></Icon></div>
-                            <h5 className="features-title">We’re Creative</h5>
-                            <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum qui dolorem eum fugiat quo.</p>
+                            <h5 className="features-title">Creative</h5>
+                            <p>I strive with every client to ensure that their vision for their business is presented as creatively and professionally as possible.  Each new website tells the unique story of the individuals and the businesses which they represent.</p>
                         </div>
                         <div className="col-md-4 col-sm-6 content-box mb-sm-30 wow fadeIn" data-wow-delay="0.4s" data-wow-duration="2s">
                             <div className="icon-top icon-black"><Icon size={32} icon={basic_alarm}></Icon></div>
-                            <h5 className="features-title">TWe have magic</h5>
-                            <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum qui dolorem eum fugiat quo.</p>
+                            <h5 className="features-title">Professional</h5>
+                            <p>My professional experience as a software developer and head of the Visualization Branch of the Georgia Tech Research Institute has taught me to always be supportive, communicative, and timely with all clients.</p>
                         </div>
                         <div className="col-md-4 col-sm-6 content-box mb-sm-30 wow fadeIn" data-wow-delay="0.6s" data-wow-duration="2s">
                             <div className="icon-top icon-black"><Icon size={32} icon={basic_globe}></Icon></div>
-                            <h5 className="features-title">Why we do it</h5>
-                            <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum qui dolorem eum fugiat quo.</p>
+                            <h5 className="features-title">Robust</h5>
+                            <p>We want the world to experience your website!  All of my websites deploy with modern Search Engine Optimization practices and are designed to be provide an responsive user experience no matter which device your website is viewed on.</p>
                         </div>
                     </div>
                 </div>
@@ -265,8 +268,8 @@ const IndexPage = () => {
 
             <section id="Statement1" className="section-padding bg-image overlay-dark dark-bg text-center" data-stellar-background-ratio="0.5" style={{backgroundImage: "url(" + Image33 + ")"}}>
                 <div className="container">
-                    <p className="max-width-700 lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam aperiam.</p>
-                    <a className="btn btn-md btn-color" href="#intro">Download</a>
+                    <p className="max-width-700 lead">Let's work together!  Contact me and provide details of the project you would like for us to build together!</p>
+                    <a className="btn btn-md btn-color" href="#intro">Contact Me</a>
                 </div>
             </section>
 
@@ -281,7 +284,7 @@ const IndexPage = () => {
                         <div className="process-box col-lg-2 col-md-4 col-sm-6 col-12 wow fadeIn" data-wow-delay="0.2s" data-wow-duration="2s">
                             <div className="tipped" data-title="Step1 - Skype Interview" data-tipper-options='{"direction":"top"}'>
                                 <div className="process-icon alt-icon-top"><Icon size={45} icon={basic_headset}></Icon></div>
-                                <h6>Interview</h6>
+                                <h6>Discuss</h6>
                             </div>
                         </div>
                         <div className="process-box col-lg-2 col-md-4 col-sm-6 col-12 wow fadeIn" data-wow-delay="0.4s" data-wow-duration="2s">
@@ -327,24 +330,24 @@ const IndexPage = () => {
                         <div className="item">
                             <div className="testimonial text-center max-width-700">
                                 <div className="page-icon-sm"><Icon size={30} icon={quoteRight}></Icon></div>
-                                <p className="lead">I got a dummy for Christmas and started teaching myself. I got books and records and sat in front of the practising.</p>
-                                <h6 className="quote-author">Jeff Dunham <span className="text-regular">( Appel Studio )</span></h6>
+                                <p className="lead">Starting a brand new and business is a lot of work, but Marcus was there to make creating our website easy!</p>
+                                <h6 className="quote-author">Josh Stevenson <span className="text-regular">( Music Producer )</span></h6>
                             </div>
                         </div>
                         <div className="item">
                             <div className="testimonial text-center max-width-700">
                                 <div className="page-icon-sm"><Icon size={30} icon={quoteRight}></Icon></div>
-                                <p className="lead">you can never eat a pet you name. And anyway, I did my first show in the third grade it would be like a ventriloquist.</p>
-                                <h6 className="quote-author">Alexander Theroux <span className="text-regular">( USA )</span></h6>
+                                <p className="lead">We're just a small business, but after working with Marcus our web presence makes us look gigantic!</p>
+                                <h6 className="quote-author">Susan Quettan <span className="text-regular">( CEO )</span></h6>
                             </div>
                         </div>
-                        <div className="item">
+                        {/* <div className="item">
                             <div className="testimonial text-center max-width-700">
                                 <div className="page-icon-sm"><Icon size={30} icon={quoteRight}></Icon></div>
-                                <p className="lead">We're not leaving here without Buster, man. Leave no crash-test dummy behind!</p>
-                                <h6 className="quote-author">Adam Savage <span className="text-regular">( Artist )</span></h6>
+                                <p className="lead"></p>
+                                <h6 className="quote-author">Deshon Battle <span className="text-regular">( Music Producer )</span></h6>
                             </div>
-                        </div>
+                        </div> */}
                     </OwlCarousel>
                 </div>
             </section>
@@ -363,16 +366,17 @@ const IndexPage = () => {
                             <div className="container">
                                 <div className="row">
                                     <div className="col-md-6 mb-sm-30">
-                                        <img src={Mockup01} alt="" />
+                                        <img src={QM3MultipleDevices} alt="" />
                                     </div>
                                     <div className="col-md-5 offset-md-1">
-                                        <h4 className="content-title">Project name & Title</h4>
-                                        <p>Cras dapibus Vivamus elementum semper nisi Aenean vulputate eleifend tellus Aenean leo ligula, porttitor eu consequat vitae Phasellus viverra nulla ut metus varius laoreet.</p>
+                                        <h4 className="content-title">QM3 Solutions</h4>
+                                        <p>A staffing company with integrity.  QM3 Solutions would love to help you find a job or fill one of your open positions!  They strive to give individuals a new view and a new way to see life through with every placement they facilitate.</p>
                                         <ul className="list-inside">
-                                            <li>Branding Design</li>
-                                            <li>Web Design</li>
+                                            <li>Responsive Web Design & Development</li>
+                                            <li>Employee Resume Application Form</li>
+                                            <li>Content Consulting</li>
                                         </ul>
-                                        <a href="http://google.com/" className="btn btn-md btn-black">Visit Site <Icon className="right" icon={externalLink}></Icon></a>
+                                        <a href="https://www.qm3solutions.com/" className="btn btn-md btn-black">Visit Site <Icon className="right" icon={externalLink}></Icon></a>
                                     </div>
                                 </div>
                             </div>
@@ -381,34 +385,19 @@ const IndexPage = () => {
                             <div className="container">
                                 <div className="row">
                                     <div className="col-md-5 mb-sm-30">
-                                        <h4 className="content-title">Project name & Title</h4>
+                                        <h4 className="content-title">Off Ki Productions</h4>
                                         <p>Cras dapibus Vivamus elementum semper nisi Aenean vulputate eleifend tellus Aenean leo ligula, porttitor eu consequat vitae Phasellus viverra nulla ut metus varius laoreet.</p>
                                         <ul className="list-inside">
-                                            <li>Fully Responsive</li>
-                                            <li>Web Design</li>
+                                            <li>Responsive Web Design & Development</li>
+                                            <li>Payment Processing</li>
+                                            <li>Automated Digital Product Delivery</li>
                                         </ul>
-                                        <a href="http://google.com/" className="btn btn-md btn-black">Visit Site <Icon className="right" icon={externalLink}></Icon></a>
+                                        <a href="http://www.offkiproductions.com/" className="btn btn-md btn-black">Visit Site <Icon className="right" icon={externalLink}></Icon></a>
                                     </div>
                                     <div className="col-md-6 offset-md-1">
-                                        <img src={Mockup01} alt="" />
+                                        <img src={OffKiMultipleDevices} alt="" />
                                     </div>
 
-                                </div>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <div className="container">
-                                <div className="row">
-                                    <div className="col-md-6 mb-sm-30">
-                                        <img src={Mockup01} alt="" />
-                                    </div>
-                                    <div className="col-md-5 offset-md-1">
-                                        <h4 className="content-title">Fully Responsive</h4>
-                                        <p>Cras dapibus Vivamus elementum semper nisi Aenean vulputate eleifend tellus Aenean leo ligula, porttitor eu consequat vitae Phasellus viverra nulla ut metus varius laoreet.</p>
-                                        <p>porttitor eu consequat vitae Phasellus viverra nulla ut metus varius laoreet</p>
-                                        <div className="spacer-15"></div>
-                                        <a href="http://google.com/" className="btn btn-md btn-black">Visit Site <Icon className="right" icon={externalLink}></Icon></a>
-                                    </div>
                                 </div>
                             </div>
                         </div>
