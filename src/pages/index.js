@@ -5,6 +5,7 @@ import React, { useEffect, useRef, useState } from "react"
 // import Layout from "../components/layout"
 // import Image from "../components/image"
 import SEO from "../components/seo"
+import ContactForm from "../components/ContactForm.js"
 
 // Plugins
 import $ from 'jquery'
@@ -12,14 +13,14 @@ import smoothscroll from 'smoothscroll-polyfill'
 import WOW from 'wowjs'
 
 // Images
-import AtlantaCityscape from "../images/Atlanta_Cityscape.jpg";
-import MarcusAvatar from "../images/Headshot.png";
-import QM3iMac from "../images/imac_qm3solutions.png";
-import QM3MultipleDevices from "../images/QM3SolutionsMultipleDevices.png";
-import OffKiMultipleDevices from "../images/OffKiMultipleDevices.png";
-import Semiconductor from "../images/Semiconductor.jpg";
-import AtlantaRoads from "../images/Shining_Clouds.jpg";
-import Image02 from "../images/full/02.jpg";
+import AtlantaCityscape from "../images/Atlanta_Cityscape.jpg";  // Background style
+import MarcusAvatar from "../images/Headshot.png";  // Can be lazy loaded with gatsby image
+import QM3iMac from "../images/imac_qm3solutions.png";  // Can be lazy loaded with gatsby image
+import QM3MultipleDevices from "../images/QM3SolutionsMultipleDevices.png";  // Can be lazy loaded with gatsby image
+import OffKiMultipleDevices from "../images/OffKiMultipleDevices.png";  // Can be lazy loaded with gatsby image
+import Semiconductor from "../images/Semiconductor.jpg";  // Background style
+import AtlantaRoads from "../images/Shining_Clouds.jpg";  // Background style
+import Image02 from "../images/full/02.jpg";  // Background style
 
 // Styles
 import 'owl.carousel/dist/assets/owl.carousel.css';
@@ -30,8 +31,8 @@ import "../styles/main.scss";
 
 // Icons
 import { Icon } from 'react-icons-kit';
-import { bars, check, exclamationCircle, linkedin, instagram, quoteRight, externalLink, twitter } from 'react-icons-kit/fa';
-import { basic_anchor, basic_alarm, basic_globe, basic_headset, basic_book_pencil, basic_picture_multiple, basic_gear, ecommerce_graph3, basic_anticlockwise, basic_display, basic_eye, basic_cards_diamonds, basic_sheet, basic_cup, basic_heart, basic_case, basic_lightbulb } from 'react-icons-kit/linea';
+import { bars, linkedin, instagram, quoteRight, externalLink, twitter } from 'react-icons-kit/fa';
+import { basic_anchor, basic_alarm, basic_globe, basic_headset, basic_book_pencil, basic_picture_multiple, basic_gear, ecommerce_graph3, basic_anticlockwise } from 'react-icons-kit/linea';
 
 // Loadable Components
 import Loadable from '@loadable/component'
@@ -133,20 +134,6 @@ const IndexPage = () => {
         items: 1,
         dots: true,  // Hide pagination buttons
         nav: true,   // Show next and prev buttons
-        navText: ["<i fill=\"currentColor\" style=\"display: inline-block;\"><svg fill=\"currentColor\" height=\"25\" width=\"10\" viewBox=\"0 0 640 1792\" style=\"display: inline-block; vertical-align: middle;\"><path d=\"M627 544q0 13-10 23l-393 393 393 393q10 10 10 23t-10 23l-50 50q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l50 50q10 10 10 23z\"></path></svg></i>", "<i fill=\"currentColor\" style=\"display: inline-block;\"><svg fill=\"currentColor\" height=\"25\" width=\"10\" viewBox=\"0 0 640 1792\" style=\"display: inline-block; vertical-align: middle;\"><path d=\"M595 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z\"></path></svg></i>"]
-    };
-
-    // Client Carousel
-    const clientCarouselOptions = {
-        autoplay: true,
-        loop: false,
-        rewind: true,
-        center: false,
-        autoplayHoverPause: true,
-        autoplayTimeout: 3000,
-        items: 6,
-        dots: false,  // Hide pagination buttons
-        nav: false,   // Show next and prev buttons
         navText: ["<i fill=\"currentColor\" style=\"display: inline-block;\"><svg fill=\"currentColor\" height=\"25\" width=\"10\" viewBox=\"0 0 640 1792\" style=\"display: inline-block; vertical-align: middle;\"><path d=\"M627 544q0 13-10 23l-393 393 393 393q10 10 10 23t-10 23l-50 50q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l50 50q10 10 10 23z\"></path></svg></i>", "<i fill=\"currentColor\" style=\"display: inline-block;\"><svg fill=\"currentColor\" height=\"25\" width=\"10\" viewBox=\"0 0 640 1792\" style=\"display: inline-block; vertical-align: middle;\"><path d=\"M595 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z\"></path></svg></i>"]
     };
 
@@ -391,37 +378,7 @@ const IndexPage = () => {
                     </div>
                     <div className="row">
                         <div className="col-md-12">
-
-                            <form id="contact" className="row contact-form">
-                                <div className="col-md-12 text-center">
-                                    <h5 className="successContent">
-                                        <Icon className="left" icon={check} style={{color: "#5cb45d"}}></Icon>Your message has been sent successfully.
-                                    </h5>
-                                    <h5 className="errorContent" style={{color: "#e1534f"}}>
-                                        <Icon className="left" icon={exclamationCircle}></Icon>There was a problem validating the form please check!
-                                    </h5>
-                                </div>
-                                <div className="col-md-6">
-                                    <div className="form-field-wrapper">
-                                        <input className="input-md form-full" id="form-name" type="text" name="form-name" placeholder="Your Name" required />
-                                    </div>
-                                    <div className="form-field-wrapper">
-                                        <input className="input-md form-full" id="form-email" type="email" name="form-email" placeholder="Email" required />
-                                    </div>
-                                    <div className="form-field-wrapper">
-                                        <input className="input-md form-full" id="form-subject" type="text" name="form-subject" placeholder="Subject" />
-                                    </div>
-                                </div>
-                                <div className="col-md-6 mb-0">
-                                    <div className="form-field-wrapper">
-                                        <textarea className="input-md form-full" id="form-message" rows="7" name="form-message" placeholder="Your Message" required></textarea>
-                                    </div>
-                                </div>
-                                <div className="col-md-12 text-center">
-                                    <button className="btn-contact-submit btn btn-md btn-color" type="submit" id="form-submit" name="submit">Submit</button>
-                                </div>
-                            </form>
-
+                            <ContactForm />
                         </div>
                     </div>
                 </div>
@@ -492,7 +449,12 @@ function useEventListener(eventName, handler, element = null){
         const eventListener = event => savedHandler.current(event);
         
         // Add event listener
-        element.addEventListener(eventName, eventListener);
+        if (eventName === "scroll") {
+            element.addEventListener(eventName, eventListener, {passive: true});
+
+        } else {
+            element.addEventListener(eventName, eventListener);
+        }
         
         // Remove event listener on cleanup
         return () => {
