@@ -2,6 +2,11 @@ import React, { useState } from 'react'
 import { Icon } from 'react-icons-kit';
 import { check, exclamationCircle } from 'react-icons-kit/fa';
 
+// Require Axios for HTTP requests
+const axios = require('axios');
+
+const serverLocation = process.env.REACT_APP_SERVER_LOCATION;
+
 export default function ContactForm() {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
@@ -42,6 +47,28 @@ export default function ContactForm() {
         console.log(email);
         console.log(subject);
         console.log(content);
+
+        // Start loading animation
+        setComponentState(componentStates.LOADING);
+
+        axios.post(serverLocation + '/.netlify/functions/send-contact-email', {
+            name: name,
+            email: email,
+            subject: subject,
+            details: content
+        }).then(function (response) {
+            // handle success   
+            console.log(response);
+
+            // Pop up a success alert
+            setComponentState(componentStates.SUCCESS);
+        }).catch(function (error) {
+            // handle error
+            console.log(error);
+    
+            // Pop up an error alert
+            setComponentState(componentStates.ERROR);
+        });
     }
 
     return (
