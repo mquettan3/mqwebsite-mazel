@@ -1,0 +1,4 @@
+Add favicon
+Make images more efficient
+Make form functional with email submit
+
