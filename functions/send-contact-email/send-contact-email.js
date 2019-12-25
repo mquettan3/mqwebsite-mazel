@@ -56,8 +56,11 @@ exports.handler = async (event) => {
   return mailgun.messages().send(mailgunData).then(() => ({
     statusCode: 200,
     body: `Successfully sent email from ${body.email} to ${CONTACT_TO_EMAIL_ADDRESS}`
-  })).catch(error => ({
-    statusCode: 422,
-    body: `Failed to send email from ${body.email} to ${CONTACT_TO_EMAIL_ADDRESS}`
-  }));
+  })).catch(error => {
+    console.log(error);
+    return ({
+      statusCode: 422,
+      body: `Failed to send email from ${body.email} to ${CONTACT_TO_EMAIL_ADDRESS}`
+    })
+  });
 }
