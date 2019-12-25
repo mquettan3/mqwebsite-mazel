@@ -5,7 +5,7 @@ import { check, exclamationCircle } from 'react-icons-kit/fa';
 // Require Axios for HTTP requests
 const axios = require('axios');
 
-var serverLocation = process.env.REACT_APP_SERVER_LOCATION;
+var serverLocation = process.env.GATSBY_SERVER_LOCATION;
 
 export default function ContactForm() {
     const [name, setName] = useState("");
