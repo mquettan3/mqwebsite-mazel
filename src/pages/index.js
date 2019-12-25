@@ -150,7 +150,7 @@ const IndexPage = () => {
             <div id="header" className={"header " + (isFixHeader ? "header-fixed " : "") + (isPrepareHeader ? "header-prepare " : "") + (isMobile ? "mobile-device " : "")}>
                 <div className="header-inner">
                     <div className="logo">
-                        <a href="#intro">
+                        <a href="#intro" onClick={handleNavMenuItemClick}>
                             <span className="quettan-logo">Quettan</span>
                         </a>
                     </div>
@@ -233,7 +233,7 @@ const IndexPage = () => {
             <section id="Statement1" className="section-padding bg-image overlay-dark dark-bg text-center" data-stellar-background-ratio="0.5" style={{backgroundImage: "url(" + Semiconductor + ")"}}>
                 <div className="container">
                     <p className="max-width-700 lead">Let's work together!  Contact me and provide details of the project you would like for us to build together!</p>
-                    <a className="btn btn-md btn-color" href="#intro">Contact Me</a>
+                    <a className="btn btn-md btn-color" href="#contact-us">Contact Me</a>
                 </div>
             </section>
 
@@ -388,14 +388,14 @@ const IndexPage = () => {
                 <div className="container text-center">
 
                     <div className="footer-logo mb-25 wow fadeInUp" data-wow-duration="1.5s">
-                        <a className="scroll-top" href="#intro">
+                        <a className="scroll-top" href="#intro" onClick={handleNavMenuItemClick}>
                             <span className="quettan-logo-dark">Quettan</span>
                         </a>
                     </div>
 
                     <p className="copyright mb-25">
                         &copy; 2019. All Rights Reserved.<br />
-                        Development by <a href="https://www.marcusquettan.com/"><b>Marcus Quettan</b></a>
+                        Development by <a href="https://www.marcusquettan.com/" onClick={handleNavMenuItemClick}><b>Marcus Quettan</b></a>
                     </p>
                     <ul className="social">
                         <li>
