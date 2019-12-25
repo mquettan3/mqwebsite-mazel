@@ -11,8 +11,12 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
+        <meta name="keywords" content="web development, web, development, design, web design, programmer, programming, coder, coding, software, business, consulting, business consulting" />
+        <meta name="msapplication-TileColor" content="#da532c" />
         <script src="/plugins/jquery.min.js"></script>
         <link rel="stylesheet" type="text/css" href="/plugins/owl-carousel/owl.carousel.min.css" />
+        <link rel="shortcut icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="shortcut icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
@@ -26,7 +30,6 @@ export default function HTML(props) {
           dangerouslySetInnerHTML={{ __html: props.body }}
         />
         {props.postBodyComponents}
-        {/* <script src="/plugins/owl-carousel/owl.carousel.min.js"></script> */}
       </body>
     </html>
   )
