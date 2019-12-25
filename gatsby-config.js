@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Official Website of Marcus Quettan`,
+    description: `Official personal website for Marcus Quettan:  Web developer, Web designer, Business consultant.   My passion is enabling individuals to turn their business ideas into a reality!  An online presence is increasingly necessary in the marketplace and I aim to serve you in creating your footprint.`,
+    author: `@mqdarkblue`,
   },
   plugins: [
     `gatsby-plugin-sass`,
