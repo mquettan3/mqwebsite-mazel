@@ -14,7 +14,7 @@ import WOW from 'wowjs'
 
 // Images
 import AtlantaCityscape from "../images/Atlanta_Cityscape.jpg";  // Background style
-import MarcusAvatar from "../images/Headshot.png";  // Can be lazy loaded with gatsby image
+import MarcusAvatar from "../images/Quettan_headshot.jpg";  // Can be lazy loaded with gatsby image
 import QM3iMac from "../images/imac_qm3solutions.png";  // Can be lazy loaded with gatsby image
 import QM3MultipleDevices from "../images/QM3SolutionsMultipleDevices.png";  // Can be lazy loaded with gatsby image
 import OffKiMultipleDevices from "../images/OffKiMultipleDevices.png";  // Can be lazy loaded with gatsby image
