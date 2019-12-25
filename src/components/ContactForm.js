@@ -52,7 +52,7 @@ export default function ContactForm() {
         setComponentState(componentStates.LOADING);
 
         if(typeof severLocation === 'undefined') {
-            serverLocation = "https://suspicious-brattain-c8abb4.netlify.com"
+            serverLocation = "https://www.marcusquettan.com"
         }
 
         axios.post(serverLocation + '/.netlify/functions/send-contact-email', {
