@@ -1,2 +1,3 @@
 Make background images more efficient.
-Fix Logo to resize on mobile.
+Fix parallax backgrounds on mobile
+
