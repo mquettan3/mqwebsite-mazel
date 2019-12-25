@@ -15,6 +15,7 @@ exports.handler = (event, context, callback) => {
   try {
     validateLength('body.name', body.name, 3, 50)
   } catch (e) {
+    console.log("Invalid Name!" + body.name);
     return callback(null, {
       statusCode: 403,
       body: e.message
@@ -24,6 +25,7 @@ exports.handler = (event, context, callback) => {
   try {
     validateEmail('body.email', body.email)
   } catch (e) {
+    console.log("Invalid Email!" + body.email);
     return callback(null, {
       statusCode: 403,
       body: e.message
@@ -33,6 +35,7 @@ exports.handler = (event, context, callback) => {
   try {
     validateLength('body.content', body.content, 10, 1000)
   } catch (e) {
+    console.log("Invalid content" + body.content)
     return callback(null, {
       statusCode: 403,
       body: e.message

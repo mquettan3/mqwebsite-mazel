@@ -59,7 +59,7 @@ export default function ContactForm() {
             name: name,
             email: email,
             subject: subject,
-            details: content
+            content: content
         }).then(function (response) {
             // handle success   
             console.log(response);
