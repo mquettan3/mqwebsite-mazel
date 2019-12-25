@@ -182,7 +182,7 @@ const IndexPage = () => {
                                 </div>
                                 <h1 className="intro-title mb-10"><span className="text-light">Hi!, I am</span> Marcus Quettan</h1>
                                 <h6 className="page-title-alt color mb-45">Web Designer & Developer</h6>
-                                <a className="btn btn-lg btn-white scroll-down" href="#latest-work">View my Latest Work</a>
+                                <a className="btn btn-lg btn-white scroll-down" href="#latest-work" onClick={handleNavMenuItemClick}>View my Latest Work</a>
                             </div>
                         </div>
                     </div>
@@ -395,7 +395,7 @@ const IndexPage = () => {
 
                     <p className="copyright mb-25">
                         &copy; 2019. All Rights Reserved.<br />
-                        Development by <a href="https://www.marcusquettan.com/" onClick={handleNavMenuItemClick}><b>Marcus Quettan</b></a>
+                        Development by <a href="#intro" onClick={handleNavMenuItemClick}><b>Marcus Quettan</b></a>
                     </p>
                     <ul className="social">
                         <li>

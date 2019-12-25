@@ -1,3 +1,2 @@
-Add favicon
-Make images more efficient
+Make background images more efficient.
 
