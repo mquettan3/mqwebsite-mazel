@@ -1,2 +1,2 @@
 Make background images more efficient.
-
+Fix Logo to resize on mobile.
