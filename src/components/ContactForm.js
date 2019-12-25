@@ -5,7 +5,7 @@ import { check, exclamationCircle } from 'react-icons-kit/fa';
 // Require Axios for HTTP requests
 const axios = require('axios');
 
-const serverLocation = process.env.REACT_APP_SERVER_LOCATION;
+var serverLocation = process.env.REACT_APP_SERVER_LOCATION;
 
 export default function ContactForm() {
     const [name, setName] = useState("");
@@ -50,6 +50,10 @@ export default function ContactForm() {
 
         // Start loading animation
         setComponentState(componentStates.LOADING);
+
+        if(typeof severLocation === 'undefined') {
+            serverLocation = "https://suspicious-brattain-c8abb4.netlify.com"
+        }
 
         axios.post(serverLocation + '/.netlify/functions/send-contact-email', {
             name: name,
