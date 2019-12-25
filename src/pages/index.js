@@ -219,12 +219,12 @@ const IndexPage = () => {
                         <div className="col-md-4 col-sm-6 content-box mb-sm-30 wow fadeIn" data-wow-delay="0.4s" data-wow-duration="2s">
                             <div className="icon-top icon-black"><Icon size={32} icon={basic_alarm}></Icon></div>
                             <h5 className="features-title">Professional</h5>
-                            <p>My professional experience as a software developer and head of the Visualization Branch of the Georgia Tech Research Institute has taught me to always be supportive, communicative, and timely with all clients.</p>
+                            <p>My professional experience as a software developer and head of the Visualization Branch of the Georgia Tech Research Institute has taught me to always be supportive, communicative, and timely with all business relationships.</p>
                         </div>
                         <div className="col-md-4 col-sm-6 content-box mb-sm-30 wow fadeIn" data-wow-delay="0.6s" data-wow-duration="2s">
                             <div className="icon-top icon-black"><Icon size={32} icon={basic_globe}></Icon></div>
                             <h5 className="features-title">Robust</h5>
-                            <p>We want the world to experience your website!  All of my websites deploy with modern Search Engine Optimization practices and are designed to be provide an responsive user experience no matter which device your website is viewed on.</p>
+                            <p>We want the world to experience your website!  All of my websites deploy with modern Search Engine Optimization (SEO) practices and are designed to provide a responsive user experience regardless of device your website is viewed on.</p>
                         </div>
                     </div>
                 </div>
