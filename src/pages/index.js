@@ -350,7 +350,7 @@ const IndexPage = () => {
                                 <div className="row">
                                     <div className="col-md-5 mb-sm-30">
                                         <h4 className="content-title">Off Ki Productions</h4>
-                                        <p>Cras dapibus Vivamus elementum semper nisi Aenean vulputate eleifend tellus Aenean leo ligula, porttitor eu consequat vitae Phasellus viverra nulla ut metus varius laoreet.</p>
+                                        <p>Off Ki Productions is an Atlanta based audio production team dedicated to enhancing YOUR craft.  Whether you're looking to buy music or a beat for your song, podcast, movie, elevator, photo slideshow...  Whatever!  Off Ki Productions brings positive and professional energy to every project to fit their client's vision.</p>
                                         <ul className="list-inside">
                                             <li>Responsive Web Design & Development</li>
                                             <li>Payment Processing</li>
