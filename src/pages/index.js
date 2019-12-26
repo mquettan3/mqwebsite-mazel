@@ -97,7 +97,7 @@ const IndexPage = () => {
       window.scroll({ top: document.querySelector(hash).offsetTop - 65, left: 0, behavior: 'smooth' });
 
       if(isMobile) {
-        setNavMenuActive(!isNavMenuActive);
+        setNavMenuActive(false);
       }
     }
   }
