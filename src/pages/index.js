@@ -139,7 +139,7 @@ const IndexPage = () => {
 
   return (
   <>
-    <SEO title="Home" />
+    <SEO title="Official Website of Marcus Quettan" />
     {/* <section id="preloader">
         <div className="site-spinner"></div>
     </section> */}
