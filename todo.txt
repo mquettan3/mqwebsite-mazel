@@ -1,3 +1,2 @@
 Make background images more efficient.
-Fix parallax backgrounds on mobile
 
